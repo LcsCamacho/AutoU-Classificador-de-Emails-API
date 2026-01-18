@@ -3,6 +3,9 @@ import re
 from nltk.corpus import stopwords
 from fastapi import UploadFile
 from pypdf import PdfReader
+import nltk
+
+nltk.download('stopwords')
 _STOPWORDS_PT = set(stopwords.words("portuguese"))
 
 def normalize_text(text: str) -> str:
