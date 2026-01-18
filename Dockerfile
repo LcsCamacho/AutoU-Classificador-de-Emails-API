@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Dependências do sistema (PDF, etc se precisar)
 RUN apt-get update && apt-get install -y \
-    build-essential && python -m nltk.downloader -d /usr/local/share/nltk_data all \
+    build-essential  \
     && rm -rf /var/lib/apt/lists/*
 
 # Instala dependências Python
