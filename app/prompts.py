@@ -35,7 +35,7 @@ def build_reply_user_prompt(email_text: str, category: Category) -> str:
 
     if category == "improdutivo":
         base_instruction += (
-            " Responda de forma simpática, mas sem assumir ações complexas. "
+            " Responda de forma simpática, gentil e agradecendo, mas sem assumir ações complexas. "
             "Você pode agradecer e encerrar a conversa, se apropriado."
         )
     else:
